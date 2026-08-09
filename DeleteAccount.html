@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Ali Tailor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #eef2f7 0%, #e6ecf5 50%, #f4f6fb 100%);
+            color: #374151;
+            padding: 24px 16px;
+            min-height: 100vh;
+        }
+
+        .page-wrap {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #9333ea 100%);
+            border-radius: 20px;
+            padding: 38px 30px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-banner::before {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+        }
+
+        .header-banner::after {
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 130px;
+            height: 130px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 50%;
+        }
+
+        .badge-icon {
+            width: 62px;
+            height: 62px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin: 0 auto 16px auto;
+            backdrop-filter: blur(4px);
+        }
+
+        .header-banner h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 8px;
+        }
+
+        .header-banner .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06);
+            padding: 26px 28px;
+            margin-top: 22px;
+        }
+
+        .intro {
+            font-size: 15.5px;
+            line-height: 1.75;
+            color: #4b5563;
+            margin-bottom: 14px;
+        }
+
+        .intro strong {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+
+        .info-row {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-icon {
+            flex-shrink: 0;
+            width: 38px;
+            height: 38px;
+            border-radius: 11px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: #ffffff;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .info-text {
+            flex: 1;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #4b5563;
+        }
+
+        .info-text strong {
+            color: #1f2937;
+        }
+
+        a.link {
+            color: #4f46e5;
+            font-weight: 700;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        a.link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            border-radius: 18px;
+            padding: 24px 28px;
+            margin-top: 22px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 10px 26px rgba(99, 102, 241, 0.35);
+        }
+
+        .contact-card p {
+            font-size: 15px;
+            margin-bottom: 6px;
+            opacity: 0.92;
+        }
+
+        .contact-card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            display: inline-block;
+            background: #ffffff;
+            color: #4f46e5;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            margin-top: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-card a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 560px) {
+            .header-banner {
+                padding: 30px 20px;
+            }
+            .card {
+                padding: 20px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+    <div class="header-banner">
+        <div class="badge-icon">🗑️</div>
+        <h1>Delete Account</h1>
+        <div class="subtitle">Ali Tailor — Your data, your control</div>
+    </div>
+
+    <div class="card">
+        <p class="intro">
+            We collect your <strong>name</strong> and <strong>email address</strong>, which you use for login,
+            and data regarding Google Play purchases. This data is used to maintain the app's functionality,
+            verify purchases, and notify you of important information.
+        </p>
+
+        <div class="info-row">
+            <div class="info-icon">🔒</div>
+            <div class="info-text">Your data is stored securely on <strong>Firebase</strong> and <strong>Google Cloud</strong> infrastructure and is not shared with any other third party, except for law enforcement agencies when required to meet legal obligations.</div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-icon">🛡️</div>
+            <div class="info-text">We maintain privacy standards. If any changes are made to the policy, you'll be notified via the app.</div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-icon">📧</div>
+            <div class="info-text">If you want to have your account deleted, you can send us an email to <a class="link" href="mailto:alitailorapp@gmail.com">alitailorapp@gmail.com</a>.</div>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <p>Ready to delete your account?</p>
+        <h3>Contact Ali Tailor Support</h3>
+        <a href="mailto:alitailorapp@gmail.com">✉️ Request Deletion</a>
+    </div>
+
+</div>
+
+</body>
+</html>

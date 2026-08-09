@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Ali Tailor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #eef2f7 0%, #e6ecf5 50%, #f4f6fb 100%);
+            color: #374151;
+            padding: 24px 16px;
+            min-height: 100vh;
+        }
+
+        .page-wrap {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #9333ea 100%);
+            border-radius: 20px;
+            padding: 38px 30px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-banner::before {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+        }
+
+        .header-banner::after {
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 130px;
+            height: 130px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 50%;
+        }
+
+        .badge-icon {
+            width: 62px;
+            height: 62px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin: 0 auto 16px auto;
+            backdrop-filter: blur(4px);
+        }
+
+        .header-banner h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 8px;
+        }
+
+        .header-banner .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .dates {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .date-chip {
+            background: rgba(255, 255, 255, 0.18);
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06);
+            padding: 26px 28px;
+            margin-top: 22px;
+        }
+
+        .intro {
+            font-size: 15.5px;
+            line-height: 1.75;
+            color: #4b5563;
+        }
+
+        .intro strong {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+
+        .section {
+            display: flex;
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .section:first-of-type {
+            margin-top: 26px;
+        }
+
+        .num-badge {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+            margin-top: 2px;
+        }
+
+        .section-body {
+            flex: 1;
+        }
+
+        .section-body h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        .section-body p {
+            font-size: 15px;
+            line-height: 1.75;
+            color: #4b5563;
+            margin-bottom: 10px;
+        }
+
+        .section-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul.clean-list {
+            list-style: none;
+            margin: 6px 0 4px 0;
+        }
+
+        ul.clean-list li {
+            position: relative;
+            padding-left: 26px;
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #4b5563;
+        }
+
+        ul.clean-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #7c3aed;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        ul.clean-list li.sub-list {
+            margin-top: 2px;
+        }
+
+        ul.nested {
+            list-style: none;
+            margin-top: 2px;
+        }
+
+        ul.nested li {
+            padding-left: 26px;
+            font-size: 14.5px;
+        }
+
+        ul.nested li::before {
+            content: "•";
+            left: 12px;
+            color: #7c3aed;
+            font-size: 16px;
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+            border-left: 4px solid #7c3aed;
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 14px 0 12px 0;
+        }
+
+        .note-box .note-title {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #4f46e5;
+            margin-bottom: 8px;
+        }
+
+        a.link {
+            color: #4f46e5;
+            font-weight: 600;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        a.link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            border-radius: 18px;
+            padding: 24px 28px;
+            margin-top: 22px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 10px 26px rgba(99, 102, 241, 0.35);
+        }
+
+        .contact-card p {
+            font-size: 15px;
+            margin-bottom: 6px;
+            opacity: 0.92;
+        }
+
+        .contact-card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            display: inline-block;
+            background: #ffffff;
+            color: #4f46e5;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            margin-top: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-card a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 560px) {
+            .header-banner {
+                padding: 30px 20px;
+            }
+            .card {
+                padding: 20px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+    <div class="header-banner">
+        <div class="badge-icon">🔒</div>
+        <h1>Privacy Policy</h1>
+        <div class="subtitle">Ali Tailor Application</div>
+        <div class="dates">
+            <div class="date-chip">Last Updated: 09/08/2026</div>
+            <div class="date-chip">Effective Date: 01/08/2026</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <p class="intro">
+            <strong>At Ali Tailor, we value your privacy.</strong> This Privacy Policy explains how we handle
+            your data when you use our application.
+        </p>
+
+        <div class="section">
+            <div class="num-badge">1</div>
+            <div class="section-body">
+                <h2>Data Collection</h2>
+                <p>When you choose to sign in with Google, we collect only the following information:</p>
+                <ul class="clean-list">
+                    <li>Profile Name</li>
+                    <li>Email Address</li>
+                </ul>
+                <p>This information is used solely for sign-in and profile display purposes. When you sign in, your name and email are stored securely in our Firebase service to recognise you across app sessions. We do not access or store your Google profile picture. We do not access any other data from your Google account.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">2</div>
+            <div class="section-body">
+                <h2>Data Usage</h2>
+                <p>We use Google Firebase Analytics to understand how the app is used (such as how often it is opened and basic device information) so we can improve the app and its features. This analytics data does not include your customer records, orders, measurements, credits, or any other business data you enter — that data stays on your device. We do not use your personal data for promotional purposes.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">3</div>
+            <div class="section-body">
+                <h2>Data Sharing</h2>
+                <p>We do not sell or rent your personal data to anyone. Your business data (customers, orders, measurements, credits, and images) stays on your device.</p>
+                <p>We share only the minimum data needed with the following service providers:</p>
+                <ul class="clean-list">
+                    <li><strong>Google Drive:</strong> Stores your backup when you choose to use cloud backup</li>
+                    <li><strong>Google AdMob:</strong> Receives device and advertising information to display ads</li>
+                    <li><strong>Firebase (Google):</strong> Stores your sign-in name and email and collects anonymous usage analytics</li>
+                </ul>
+                <p>These services have their own privacy policies. We are not responsible for their data practices.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">4</div>
+            <div class="section-body">
+                <h2>Data Deletion Policy</h2>
+                <p>You can delete your data at any time:</p>
+                <ul class="clean-list">
+                    <li><strong>Via App:</strong> You can delete individual customers, orders, credits, and collections directly from the app.</li>
+                    <li><strong>Via Google Drive:</strong> If you have backed up data to Google Drive, you can delete it directly from your Google Drive account.</li>
+                    <li><strong>Complete Deletion:</strong> Uninstalling the app will remove all locally stored data from your device.</li>
+                    <li><strong>Firebase Account Data:</strong> The sign-in name and email stored in Firebase can be deleted by emailing us at <a class="link" href="mailto:alitailorapp@gmail.com">alitailorapp@gmail.com</a>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">5</div>
+            <div class="section-body">
+                <h2>Security</h2>
+                <p>We take the following measures to protect your data:</p>
+                <ul class="clean-list">
+                    <li>Your data is stored locally on your device</li>
+                    <li>We use Room Database for local storage</li>
+                    <li>Google Drive backups are stored on Google's secure servers</li>
+                    <li>We do not share your data with any third parties</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">6</div>
+            <div class="section-body">
+                <h2>Children's Privacy</h2>
+                <p>This app is not intended for children under the age of 13. We do not knowingly collect personal information from children.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">7</div>
+            <div class="section-body">
+                <h2>Payments</h2>
+                <p>All payments for subscriptions and in-app purchases are securely processed through Google Play Store. We do not store any payment information on our servers.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">8</div>
+            <div class="section-body">
+                <h2>Advertising</h2>
+                <p>This app uses Google AdMob to display advertisements in the following formats:</p>
+                <ul class="clean-list">
+                    <li>Native ads</li>
+                    <li>Banner ads</li>
+                    <li>App open ads (shown when you open the app)</li>
+                    <li>Rewarded ads (watched voluntarily to unlock optional actions such as saving or sharing PDFs)</li>
+                </ul>
+                <p>AdMob may collect the following information:</p>
+                <ul class="clean-list">
+                    <li>Advertising ID (a device identifier used for advertising)</li>
+                    <li>Device type (mobile/tablet)</li>
+                    <li>Operating system version</li>
+                    <li>Number of interactions with advertisements</li>
+                    <li>Duration of time spent viewing advertisements</li>
+                </ul>
+                <p>This information is used to serve and measure ads. You can opt out of personalized ads through your device settings. If you are in the EEA or UK, you will be asked for your consent before personalized ads are shown.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">9</div>
+            <div class="section-body">
+                <h2>Local Data Storage</h2>
+                <p>All your customer records, orders, measurements, credits, and images are stored locally on your device using a secure database. Your business data is not uploaded to any server, except when: (1) you choose to use the Google Drive backup feature, or (2) you sign in with Google, in which case your name and email are stored in Firebase for authentication (see Section 1).</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">10</div>
+            <div class="section-body">
+                <h2>App Permissions</h2>
+                <p>Ali Tailor requests only the following minimal permissions:</p>
+                <ul class="clean-list">
+                    <li class="sub-list"><strong>Camera:</strong> Used solely to capture images of cloth and designs during customer registration. These images are stored locally on your device and are never uploaded to any server. The purpose is to help you remember which fabric and design were associated with each customer.</li>
+                    <li class="sub-list"><strong>Notifications:</strong> Used to send you timely reminders related to:
+                        <ul class="nested">
+                            <li>Orders that are overdue or approaching their delivery date</li>
+                            <li>Backup reminders to help you keep your data safe</li>
+                        </ul>
+                        No promotional or marketing notifications are sent.
+                    </li>
+                    <li class="sub-list"><strong>Internet:</strong> Used only for:
+                        <ul class="nested">
+                            <li>Google Drive backup and restore (if you choose to enable it)</li>
+                            <li>Displaying advertisements through Google AdMob</li>
+                        </ul>
+                    </li>
+                    <li class="sub-list"><strong>Google Account (Cloud Backup):</strong> Used only when you choose to sign in with Google for cloud backup and restore. In Android this permission is listed under the "Contacts" permission group (GET_ACCOUNTS). Ali Tailor does not read, store, or transmit your device contacts or any other account data — it only lets you choose which Google account to use for backup.</li>
+                </ul>
+                <p>Ali Tailor does not request or use the following permissions: Storage / File Access, Location, Microphone, SMS or Phone.</p>
+                <p>All data remains on your device unless you explicitly choose to back up to Google Drive.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">11</div>
+            <div class="section-body">
+                <h2>Data Retention</h2>
+                <ul class="clean-list">
+                    <li>Your data remains on your device until you uninstall the app</li>
+                    <li>Google Drive backups remain in your own Google account — we do not delete them</li>
+                    <li>Sign-in information exists only while the app is active</li>
+                    <li>Uninstalling the app automatically removes all locally stored data</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">12</div>
+            <div class="section-body">
+                <h2>Your Rights</h2>
+                <p>You have the following rights:</p>
+                <ul class="clean-list">
+                    <li><strong>Access:</strong> You can view your data at any time</li>
+                    <li><strong>Correction:</strong> You can correct any inaccurate data</li>
+                    <li><strong>Deletion:</strong> You can permanently delete your data</li>
+                    <li><strong>Export:</strong> You can export your data</li>
+                </ul>
+                <p>All these rights are provided to you within the app itself.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">13</div>
+            <div class="section-body">
+                <h2>Changes to This Policy</h2>
+                <p>We may update this privacy policy from time to time. Continued use of the app after changes constitutes acceptance of the new policy. Important changes will be notified within the app.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">14</div>
+            <div class="section-body">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+                <p>Email: <a class="link" href="mailto:alitailorapp@gmail.com">alitailorapp@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <p>Have any questions?</p>
+        <h3>Contact Ali Tailor Support</h3>
+        <a href="mailto:alitailorapp@gmail.com">✉️ alitailorapp@gmail.com</a>
+    </div>
+
+</div>
+
+</body>
+</html>
