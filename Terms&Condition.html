@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Ali Tailor</title>
+    <link rel="canonical" href="https://alitailorapp.github.io/Terms&amp;Condition.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #eef2f7 0%, #e6ecf5 50%, #f4f6fb 100%);
+            color: #374151;
+            padding: 24px 16px;
+            min-height: 100vh;
+        }
+
+        .page-wrap {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        .header-banner {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 55%, #9333ea 100%);
+            border-radius: 20px;
+            padding: 38px 30px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 12px 30px rgba(99, 102, 241, 0.35);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-banner::before {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+        }
+
+        .header-banner::after {
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: -40px;
+            width: 130px;
+            height: 130px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 50%;
+        }
+
+        .badge-icon {
+            width: 62px;
+            height: 62px;
+            background: rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin: 0 auto 16px auto;
+            backdrop-filter: blur(4px);
+        }
+
+        .header-banner h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 8px;
+        }
+
+        .header-banner .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .effective-date {
+            display: inline-block;
+            margin-top: 16px;
+            background: rgba(255, 255, 255, 0.18);
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06);
+            padding: 26px 28px;
+            margin-top: 22px;
+        }
+
+        .intro {
+            font-size: 15.5px;
+            line-height: 1.75;
+            color: #4b5563;
+        }
+
+        .intro strong {
+            color: #4f46e5;
+            font-weight: 600;
+        }
+
+        .section {
+            display: flex;
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .section:first-of-type {
+            margin-top: 26px;
+        }
+
+        .num-badge {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+            margin-top: 2px;
+        }
+
+        .section-body {
+            flex: 1;
+        }
+
+        .section-body h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        .section-body p {
+            font-size: 15px;
+            line-height: 1.75;
+            color: #4b5563;
+            margin-bottom: 10px;
+        }
+
+        .section-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul.clean-list {
+            list-style: none;
+            margin: 6px 0 4px 0;
+        }
+
+        ul.clean-list li {
+            position: relative;
+            padding-left: 26px;
+            margin-bottom: 8px;
+            font-size: 15px;
+            line-height: 1.65;
+            color: #4b5563;
+        }
+
+        ul.clean-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #7c3aed;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, #eef2ff, #f5f3ff);
+            border-left: 4px solid #7c3aed;
+            border-radius: 12px;
+            padding: 16px 18px;
+            margin: 14px 0 12px 0;
+        }
+
+        .note-box .note-title {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #4f46e5;
+            margin-bottom: 8px;
+        }
+
+        .note-box p {
+            color: #4b5563;
+        }
+
+        .include-exclude {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-top: 12px;
+        }
+
+        .data-col {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 14px 16px;
+        }
+
+        .data-col h4 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .data-col.included h4 { color: #059669; }
+        .data-col.excluded h4 { color: #dc2626; }
+
+        ul.mini-list {
+            list-style: none;
+        }
+
+        ul.mini-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.55;
+        }
+
+        ul.mini-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            border-radius: 18px;
+            padding: 24px 28px;
+            margin-top: 22px;
+            text-align: center;
+            color: #ffffff;
+            box-shadow: 0 10px 26px rgba(99, 102, 241, 0.35);
+        }
+
+        .contact-card p {
+            font-size: 15px;
+            margin-bottom: 6px;
+            opacity: 0.92;
+        }
+
+        .contact-card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .contact-card a {
+            display: inline-block;
+            background: #ffffff;
+            color: #4f46e5;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            margin-top: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-card a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        a.link {
+            color: #4f46e5;
+            font-weight: 600;
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        a.link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 560px) {
+            .include-exclude {
+                grid-template-columns: 1fr;
+            }
+            .header-banner {
+                padding: 30px 20px;
+            }
+            .card {
+                padding: 20px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+    <div class="header-banner">
+        <div class="badge-icon">📜</div>
+        <h1>Terms &amp; Conditions</h1>
+        <div class="subtitle">Ali Tailor Application</div>
+        <div class="effective-date">Effective Date: 01/08/2026</div>
+    </div>
+
+    <div class="card">
+        <p class="intro">
+            <strong>Welcome to Ali Tailor.</strong> By using this application, you agree to the following
+            terms and conditions. Please read them carefully before using the app.
+        </p>
+
+        <div class="section">
+            <div class="num-badge">1</div>
+            <div class="section-body">
+                <h2>App Usage</h2>
+                <p>This application is designed for tailors to manage customer records, orders, measurements, credits, and collections. You are responsible for the data you enter into the app.</p>
+                <p>Ali Tailor may only be used by individuals who are 18 years of age or older. We do not knowingly collect personal information from children under the age of 13.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">2</div>
+            <div class="section-body">
+                <h2>Intellectual Property</h2>
+                <p>All copyright, trademarks, and intellectual property rights of the Ali Tailor app are reserved by us. You may not copy, reproduce, or modify this app or any part of it.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">3</div>
+            <div class="section-body">
+                <h2>Prohibited Uses</h2>
+                <p>You may not:</p>
+                <ul class="clean-list">
+                    <li>Enter false or fraudulent data into the app</li>
+                    <li>Attempt to access or tamper with other users' data</li>
+                    <li>Use tools or methods that may harm the app</li>
+                    <li>Use the app for any unlawful purpose</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">4</div>
+            <div class="section-body">
+                <h2>Subscriptions &amp; Purchases</h2>
+                <p>Ali Tailor offers in-app purchases including:</p>
+                <ul class="clean-list">
+                    <li>Measurement packages (one-time purchases to increase measurement limits)</li>
+                    <li>Cloud backup subscriptions (monthly, quarterly, half-yearly, yearly)</li>
+                </ul>
+                <p>All payments are processed through Google Play Store. Prices may vary by region.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">5</div>
+            <div class="section-body">
+                <h2>Refund Policy</h2>
+                <p>All refunds are handled by Google Play Store. If you encounter any issues with a purchase, please contact us at <a class="link" href="mailto:alitailorapp@gmail.com">alitailorapp@gmail.com</a> within 3 days of purchase. We will do our best to resolve the issue.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">6</div>
+            <div class="section-body">
+                <h2>Google Drive Backup &amp; Data Loss</h2>
+                <p>If you use the Google Drive backup feature, your data will be stored on your personal Google Drive account. Ali Tailor is not responsible for any data loss that may occur due to:</p>
+                <ul class="clean-list">
+                    <li>Google Drive account issues</li>
+                    <li>Backup file corruption</li>
+                    <li>User error during backup or restore</li>
+                    <li>Changes in Google Drive API</li>
+                </ul>
+
+                <div class="note-box">
+                    <div class="note-title">📌 Note – Backup Scope</div>
+                    <p>When you create a backup, the following data is included:</p>
+                    <div class="include-exclude">
+                        <div class="data-col included">
+                            <h4>✓ Included</h4>
+                            <ul class="mini-list">
+                                <li>Customer measurements</li>
+                                <li>Credit list</li>
+                                <li>Orders (Pending, Working, Completed)</li>
+                                <li>Registration form edits</li>
+                                <li>Complete app settings</li>
+                            </ul>
+                        </div>
+                        <div class="data-col excluded">
+                            <h4>✕ Not included</h4>
+                            <ul class="mini-list">
+                                <li>Delivery orders</li>
+                                <li>Credit collections</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">7</div>
+            <div class="section-body">
+                <h2>User Data Responsibility</h2>
+                <p>You are solely responsible for maintaining backups of your data. We strongly recommend using the backup feature regularly.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">8</div>
+            <div class="section-body">
+                <h2>Limitation of Liability</h2>
+                <p>Ali Tailor is not liable for any data loss, corruption, or misuse. We only provide the basic features of the app. Our maximum liability is limited to the amount of your last payment.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">9</div>
+            <div class="section-body">
+                <h2>App Permissions</h2>
+                <p>Ali Tailor uses the following permissions:</p>
+                <ul class="clean-list">
+                <li><strong>Notifications:</strong> For order and backup reminders</li>
+                    <li><strong>Internet:</strong> For Google Drive backup and advertisements</li>
+                    <li><strong>Google Account:</strong> To sign in for cloud backup (shown under the "Contacts" group in Android, but we do not read your contacts)</li>
+                </ul>
+                <p>For more details, please refer to our Privacy Policy.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">10</div>
+            <div class="section-body">
+                <h2>Changes to Terms</h2>
+                <p>We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">11</div>
+            <div class="section-body">
+                <h2>Governing Law</h2>
+                <p>These terms shall be governed by the laws of Pakistan. In the event of any dispute, the courts of Islamabad (Pakistan) shall have exclusive jurisdiction.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="num-badge">12</div>
+            <div class="section-body">
+                <h2>Contact</h2>
+                <p>Email: <a class="link" href="mailto:alitailorapp@gmail.com">alitailorapp@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-card">
+        <p>Have any questions?</p>
+        <h3>Contact Ali Tailor Support</h3>
+        <a href="mailto:alitailorapp@gmail.com">✉️ alitailorapp@gmail.com</a>
+    </div>
+
+</div>
+
+</body>
+</html>
